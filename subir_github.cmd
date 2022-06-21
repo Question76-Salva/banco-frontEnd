@@ -1,4 +1,4 @@
 git add .
-git commit -m "Ejercicio 4.2 - api"
+git commit -m "Migrado proyecto a TS"
 git push origin master
 pause

@@ -1,4 +1,4 @@
-function mostrarGestor(gestor) {
+export function mostrarGestor(gestor) {
     console.log(`id: ${gestor.id}`);
     console.log(`usuario: ${gestor.usuario}`);
     console.log(`password: ${gestor.password}`);
@@ -6,9 +6,9 @@ function mostrarGestor(gestor) {
     console.log('------------------------------');    
 }
 
-function mostrarGestores(gestores) {
+export function mostrarGestores(gestores) {
     console.log('--- GESTORES ---');
-    for (gestor of gestores) {
+    for (const gestor of gestores) {
         mostrarGestor(gestor);   
     }
 }
@@ -23,7 +23,7 @@ function mostrarCliente(cliente) {
 }
 
 function mostrarClientes(clientes) {
-    for (cliente of clientes) {
+    for (const cliente of clientes) {
            mostrarCliente(cliente);
     }
 }
